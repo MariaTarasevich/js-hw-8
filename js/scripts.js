@@ -84,7 +84,7 @@ document.body.appendChild(app);
 let style = document.createElement('style');
 style.innerHTML = `
     @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Montserrat:wght@700&family=Open+Sans&display=swap');
-    body {
+    * {
         margin: 0;
         padding: 0;
     }
@@ -100,7 +100,6 @@ style.innerHTML = `
         margin-bottom: 55px;
     }
     .main-title {
-        margin: 0;
         font-weight:normal;
         font-family: Arvo;
     }
@@ -118,6 +117,7 @@ style.innerHTML = `
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-around;
         padding: 80px 95px;
     }
     .right-block {
